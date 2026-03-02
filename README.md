@@ -7,8 +7,11 @@ Ele tem como foco a busca e facilitação sobre educação ambiental e sustentab
 - Fonte                 ((Relacionado com IHC))
 - Imagem
 
-Tecnologias Utilizadas
+Tecnologias Utilizadas:
 
 - HTML5
 - CSS3                       ((ATÉ O MOMENTO))
 - 
+
+Pesquisar sites/apps relacionados com o tema 
+Trazer um pequeno resumo (aprox 6 linhas) para proxima aula contendo os objetivos de desenvolvimento, plataforma e algo inovador ATÉ 09/03
