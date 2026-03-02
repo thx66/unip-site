@@ -3,9 +3,9 @@ Este projeto consiste em um site desenvolvido para conhecimentos e assuntos sobr
 Ele tem como foco a busca e facilitação sobre educação ambiental e sustentabilidade.
 
 #Definir o porque das escolhas:
--Cor
--Fonte                 ((Relacionado com IHC))
--Imagem
+- Cor
+- Fonte                 ((Relacionado com IHC))
+- Imagem
 
 Tecnologias Utilizadas
 
