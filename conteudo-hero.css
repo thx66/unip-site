@@ -1,0 +1,11 @@
+.conteudo-hero {
+    background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    backdrop-filter: blur(8px);           /* Aplica o desfoque no que está atrás */
+    -webkit-backdrop-filter: blur(8px);   /* Suporte para Safari */
+    color: var(--branco);
+    margin-left: 80px;
+    font-size: 1.2rem;
+    font-style: bold;
+    width: 50%;
+    padding-top: 10rem;
+}
