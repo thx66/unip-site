@@ -1,58 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="tree.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>SmartEco - Uma Cidade Inteligente</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="tree.png" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
-  <title>SmartEco - Uma Cidade Inteligente</title>
-</head>
+  <body>
+    <header>
+      <a href="#"><h1 class="titulo-header">SMART<span>ECO</span></h1></a>
 
-<body>
-  <header>
-    <a href="#"><h1 class="titulo-header">SMART<span>ECO</span></h1></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#missao">Nossa Missão</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#missao">Nossa Missão</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#sobre">Sobre Nós</a></li>
-      </ul>
-    </nav>
+    <main>
+      <section class="hero">
+        <img src="hero-riopreto.jpeg" class="hero-img" />
 
-  </header>
+        <div class="scroll-indicator">
+          <img src="SetaBaixo.svg" alt="Scroll Indicator" />
+        </div>
 
-  <main>
-    <section class="hero">
-      <img src="hero-riopreto.jpeg" class="hero-img">
+        <section class="conteudo-hero">
+          <h1>TECNOLOGIA PARA CIDADES MAIS INTELIGENTES</h1>
+          <p>
+            Usamos inovação para melhorar mobilidade, sustentabilidade e
+            qualidade de vida urbana.
+          </p>
 
-      <div class="scroll-indicator"><img src="SetaBaixo.svg" alt="Scroll Indicator"></div>
+          <section class="stats">
+            <div><strong>+</strong><span> Sustentabilidade</span></div>
+            <div><strong>+</strong><span> Inovação</span></div>
+            <div><strong>+</strong><span> Tecnologia</span></div>
+          </section>
 
-      <section class="conteudo-hero">
-        <h1>TECNOLOGIA PARA CIDADES MAIS INTELIGENTES</h1>
-        <p>Usamos inovação para melhorar mobilidade, sustentabilidade e qualidade de vida urbana.</p>
-
-        <section class="stats">
-          <div><strong>+</strong><span> Sustentabilidade</span></div>
-          <div><strong>+</strong><span> Inovação</span></div>
-          <div><strong>+</strong><span> Tecnologia</span></div>
+          <a href="#missao" class="botao">EXPLORAR</a>
         </section>
-
-        <a href="#missao" class="botao">EXPLORAR</a>
       </section>
-    </section>
 
-    <section id="missao">
-      <h2>NOSSA MISSÃO</h2>
-      <p>Transformar cidades por meio da tecnologia e da sustentabilidade, promovendo soluções inteligentes que melhoram a qualidade de vida e preservam o meio ambiente.</p>
-      <a href="#sobre">Conheça mais sobre nós</a>
-    </section>
-  </main>
+      <section id="missao">
+        <h2>NOSSA MISSÃO</h2>
+        <p>
+          Transformar cidades por meio da tecnologia e da sustentabilidade,
+          promovendo soluções inteligentes que melhoram a qualidade de vida e
+          preservam o meio ambiente.
+        </p>
+        <a href="#sobre">Conheça mais sobre nós</a>
+      </section>
 
-</body>
+      <section id="projetos">
+        <h2>PROJETOS</h2>
+        <div id="cards-container">
+          <div class="cards" id="card1">
+            <img src="EcoRota.jpeg" alt="EcoRota">
+          </div>
 
+          <div class="cards" id="card2">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.WTY1q2aAq_87dDfGCSZ4PwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="AquaSmart">
+          </div>
+
+          <div class="cards" id="card3">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.WTY1q2aAq_87dDfGCSZ4PwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="SolarMap">
+          </div>
+        
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet cupiditate maiores architecto repellat officia. Ab ad placeat eaque, qui in sequi quam maxime delectus inventore voluptas doloremque sapiente labore.</p>
+      </section>
+    </main>
+  </body>
 </html>

@@ -228,3 +228,49 @@ header {
 section {
     scroll-margin-top: 80px;
 }
+
+/* PROJETOS */
+#projetos {
+    background-image: url('https://images.pexels.com/photos/1572036/pexels-photo-1572036.jpeg?cs=srgb&dl=pexels-sameera-madusanka-1572036.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#projetos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+#projetos h2 {
+    font-size: 2rem;
+    color: var(--branco);
+    margin-bottom: 1rem;
+    padding-top: 10%;
+    z-index: 999;
+}
+
+#cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    z-index: 999;
+}
+
+.cards {
+    background-color: black;
+    height: 450px;
+    width: 350px;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 20px 30px -10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
