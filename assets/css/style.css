@@ -303,3 +303,19 @@ section {
     line-height: 1.6;
     opacity: 0.85;
 }
+
+.botao-projetos {
+    background: var(--verde);
+    color: var(--branco);
+    padding: 14px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.bota-projetos:hover {
+    background: var(--verde-claro);
+    color: var(--preto);
+    transform: scale(1.05);
+}
