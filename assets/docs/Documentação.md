@@ -1,4 +1,4 @@
-# Relatório de Projeto — SmartEco 
+![alt text](image.png)# Relatório de Projeto — SmartEco 
 **Instituição:** UNIP — Universidade Paulista, São José do Rio Preto  
 **Data:** Primeiro Semestre de 2026
 

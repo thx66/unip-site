@@ -1,22 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="tree.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/images/tree.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
     <title>SmartEco - Uma Cidade Inteligente</title>
   </head>
 
   <body>
     <header>
-      <a href="#"><h1 class="titulo-header">SMART<span>ECO</span></h1></a>
+      <a href="#hero" class="titulo-header" aria-label="SmartEco - Página inicial">SMART<span>ECO</span></a>
 
       <nav>
         <ul class="nav-links">
@@ -28,58 +26,81 @@
     </header>
 
     <main>
-      <section class="hero">
-        <img src="hero-riopreto.jpeg" class="hero-img" />
+
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <img src="assets/images/hero-riopreto.jpeg" class="hero-img" alt="Vista aérea de São José do Rio Preto" />
 
         <div class="scroll-indicator">
-          <img src="SetaBaixo.svg" alt="Scroll Indicator" />
+          <img src="assets/icons/SetaBaixo.svg" alt="Indicador de rolagem" />
         </div>
 
-        <section class="conteudo-hero">
+        <div class="conteudo-hero">
           <h1>TECNOLOGIA PARA CIDADES MAIS INTELIGENTES</h1>
-          <p>
-            Usamos inovação para melhorar mobilidade, sustentabilidade e
-            qualidade de vida urbana.
-          </p>
+          <p>Usamos inovação para melhorar mobilidade, sustentabilidade e qualidade de vida urbana.</p>
 
-          <section class="stats">
-            <div><strong>+</strong><span> Sustentabilidade</span></div>
-            <div><strong>+</strong><span> Inovação</span></div>
-            <div><strong>+</strong><span> Tecnologia</span></div>
-          </section>
+          <div class="stats">
+            <div><span class="stats-plus">+</span><span> Sustentabilidade</span></div>
+            <div><span class="stats-plus">+</span><span> Inovação</span></div>
+            <div><span class="stats-plus">+</span><span> Tecnologia</span></div>
+          </div>
 
           <a href="#missao" class="botao">EXPLORAR</a>
-        </section>
+        </div>
       </section>
 
+      <!-- MISSÃO -->
       <section id="missao">
         <h2>NOSSA MISSÃO</h2>
-        <p>
-          Transformar cidades por meio da tecnologia e da sustentabilidade,
-          promovendo soluções inteligentes que melhoram a qualidade de vida e
-          preservam o meio ambiente.
-        </p>
+        <p>Transformar cidades por meio da tecnologia e da sustentabilidade, promovendo soluções inteligentes que melhoram a qualidade de vida e preservam o meio ambiente.</p>
         <a href="#sobre">Conheça mais sobre nós</a>
       </section>
 
+      <!-- PROJETOS -->
       <section id="projetos">
         <h2>PROJETOS</h2>
         <div id="cards-container">
+
           <div class="cards" id="card1">
-            <img src="EcoRota.jpeg" alt="EcoRota">
+            <img src="assets/images/EcoRota.jpeg" alt="EcoRota" class="projetos-img" />
+            <div class="card-conteudo">
+              <h3>EcoRota</h3>
+              <p>Planejamento inteligente de rotas urbanas que prioriza meios de transporte sustentáveis. Reduz a emissão de carbono e incentiva o uso de ciclovias e transporte público na cidade.</p>
+            </div>
           </div>
 
           <div class="cards" id="card2">
-            <img src="https://tse4.mm.bing.net/th/id/OIP.WTY1q2aAq_87dDfGCSZ4PwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="AquaSmart">
+            <img src="assets/images/AquaSmart.jpeg" alt="AquaSmart" class="projetos-img" />
+            <div class="card-conteudo">
+              <h3>AquaSmart</h3>
+              <p>Monitoramento do consumo de água em tempo real para condomínios e empresas. Identifica pontos de desperdício e envia alertas automáticos para promover o uso consciente do recurso.</p>
+            </div>
           </div>
 
           <div class="cards" id="card3">
-            <img src="https://tse4.mm.bing.net/th/id/OIP.WTY1q2aAq_87dDfGCSZ4PwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="SolarMap">
+            <img src="assets/images/SolarMap.jpeg" alt="SolarMap" class="projetos-img" />
+            <div class="card-conteudo">
+              <h3>SolarMap</h3>
+              <p>Mapa interativo que analisa dados de incidência solar para indicar os melhores locais da cidade para instalação de painéis fotovoltaicos, facilitando a transição para energia limpa.</p>
+            </div>
           </div>
-        
+
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet cupiditate maiores architecto repellat officia. Ab ad placeat eaque, qui in sequi quam maxime delectus inventore voluptas doloremque sapiente labore.</p>
       </section>
+
     </main>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          var destino = document.querySelector(this.getAttribute('href'));
+          if (destino) {
+            destino.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>

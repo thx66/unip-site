@@ -17,12 +17,12 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
     font-family: var(--fonte);
     color: var(--preto);
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -31,7 +31,7 @@ header {
     position: fixed;
     width: 100%;
     padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.719);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -84,7 +84,7 @@ header {
 
 .hero {
     position: relative;
-    height: 100vh;
+    height: 95vh;
     overflow: hidden;
 }
 
@@ -109,7 +109,7 @@ header {
     transform: translateY(-50%);
     max-width: 600px;
     color: var(--branco);
-    z-index: 2;
+    z-index: 9;
     animation: fadeUp 1s ease forwards;
 }
 
@@ -131,7 +131,6 @@ header {
 
 .conteudo-hero p {
     margin: 1rem 0 2rem;
-    opacity: 0.9;
 }
 
 /* STATS */
@@ -142,8 +141,9 @@ header {
     margin-bottom: 2rem;
 }
 
-.stats strong {
+.stats-plus {
     font-size: 1.2rem;
+    font-weight: 700;
     color: var(--verde-claro);
 }
 
@@ -186,8 +186,8 @@ header {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translate(-50%, 0); }
-    50% { transform: translate(-50%, 10px); }
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(10px); }
 }
 
 /* MISSÃO */
@@ -230,8 +230,9 @@ section {
 }
 
 /* PROJETOS */
+
 #projetos {
-    background-image: url('https://images.pexels.com/photos/1572036/pexels-photo-1572036.jpeg?cs=srgb&dl=pexels-sameera-madusanka-1572036.jpg&fm=jpg');
+    background-image: url(../images/projeto-img.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -255,22 +256,50 @@ section {
     color: var(--branco);
     margin-bottom: 1rem;
     padding-top: 10%;
-    z-index: 999;
+    z-index: 2;
 }
 
 #cards-container {
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    z-index: 999;
+    z-index: 2;
 }
 
 .cards {
-    background-color: black;
+    background-color: var(--preto);
     height: 450px;
     width: 350px;
     box-shadow: rgba(255, 255, 255, 0.24) 0px 20px 30px -10px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    border-radius: 8px;
+}
+
+.projetos-img {
+    background-image: 
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 1.2rem;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.card-conteudo h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--verde-claro);
+}
+
+.card-conteudo p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    opacity: 0.85;
 }
