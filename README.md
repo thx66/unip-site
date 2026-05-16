@@ -1,4 +1,4 @@
-# <img src="../images/tree.png" alt="Logo SmartEco" width="50"/> Relatório de Projeto — SmartEco 
+# Relatório de Projeto — SmartEco 
 **Instituição:** UNIP — Universidade Paulista, São José do Rio Preto  
 **Curso:** Ciências da Computação  
 **Data:** Primeiro Semestre de 2026  
